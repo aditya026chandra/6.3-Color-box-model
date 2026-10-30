@@ -1,0 +1,47 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #ffffff;
+  margin: 20px;
+}
+
+/* Base size for all square boxes */
+.box {
+  width: 250px;
+  height: 250px;
+}
+
+/* 1. First Box: Teal background, 10px solid black border, 20px padding */
+.box1 {
+  background-color: #5caba0;
+  border: 10px solid #000000;
+  padding: 20px;
+}
+
+.box1 p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  color: #000000;
+}
+
+/* 2. Second Box: Gold yellow background, corner-to-corner aligned with box 1 */
+/* Border: 20px top/bottom, 10px left/right */
+.box2 {
+  background-color: #ffd000;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 20px 10px 20px 10px;
+  margin-left: 250px; /* Aligns top-left corner to bottom-right corner of box1 */
+}
+
+/* 3. Third Box: Red/Coral background, corner-to-corner aligned with box 2 */
+.box3 {
+  background-color: #d86868;
+  border: 10px solid #000000;
+  margin-left: 0; /* Aligns top-left corner to bottom-left corner of box2 */
+}
